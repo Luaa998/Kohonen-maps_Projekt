@@ -6,17 +6,17 @@
   		"bq_table_id": "table_id"
   	},
   	"memory_usage": 100,
-  	"selection": "sequential"
+  	"selection": "None"
   },
   "column_information":{
-  	"column_highlight": "Title",
-  	"column_highlight_color": "Bond_actor",
-  	"column_features": ["Index", "Title", "Year", "Bond_actor", "Director"],
+  	"column_highlight": "index",
+  	"column_highlight_color": "breuni_class",
+  	"column_features": ["breuni_class", "index"],
 	"column_features_direction": "exclude"
   },
   "model_som_information":{
-  	"network_size": [15,15],
-  	"num_iterations": 10000,
+  	"network_size": [30,30],
+  	"num_iterations": 1000,
 	"learning_rate": 0.5,
   	"sigma": 1.5,
   	"neighborhood_function": "gaussian",
@@ -24,12 +24,12 @@
   	"activation_distance": "euclidean",
   	"initial_weights":"pca",
   	"training":"random",
-  	"seed": 1268
+  	"seed": 1
   },
   "model_som_action":{
   	"dimension_reduction":{
   		"implement": "yes",
-  		"normalize": "yes"
+  		"normalize": "no"
   	},
   	"feature_selection":{
   		"implement": "no"
