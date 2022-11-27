@@ -1,4 +1,4 @@
-RFC Accuracy,KNC Accuracy
+RFC Accuracy,KNC Accuracy,learning_rate
 0.5555555555555556,0.4444444444444444,0.001
 0.6,0.3,0.002
 0.7,0.4,0.003
