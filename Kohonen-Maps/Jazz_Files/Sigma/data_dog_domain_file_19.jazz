@@ -1,45 +1,51 @@
 {
-  "data_params":{
-  	"big_query":{
-  		"bq_project": "project_id",
-	  	"bq_dataset_id": "dataset_id",
-  		"bq_table_id": "table_id"
-  	},
-  	"memory_usage": 100,
-  	"selection": "None"
-  },
-  "column_information":{
-  	"column_highlight": "index",
-  	"column_highlight_color": "breuni_class",
-  	"column_features": ["breuni_class", "index"],
-	"column_features_direction": "exclude"
-  },
-  "model_som_information":{
-  	"network_size": [30,30],
-  	"num_iterations": 1000,
-	"learning_rate": 0.5,
-  	"sigma": 10.5,
-  	"neighborhood_function": "gaussian",
-  	"topology": "rectangular",
-  	"activation_distance": "euclidean",
-  	"initial_weights":"pca",
-  	"training":"random",
-  	"seed": 1
-  },
-  "model_som_action":{
-  	"dimension_reduction":{
-  		"implement": "yes",
-  		"normalize": "no"
-  	},
-  	"feature_selection":{
-  		"implement": "no"
-  	},
-  	"classification":{
-  		"implement": "no"
-  	},
-  	"clustering":{
-  		"implement": "no",
-  		"num_clusters": 3
-  	}
-  }
+    "data_params": {
+        "big_query": {
+            "bq_project": "project_id",
+            "bq_dataset_id": "dataset_id",
+            "bq_table_id": "table_id"
+        },
+        "memory_usage": 100,
+        "selection": "None"
+    },
+    "column_information": {
+        "column_highlight": "index",
+        "column_highlight_color": "breuni_class",
+        "column_features": [
+            "breuni_class",
+            "index"
+        ],
+        "column_features_direction": "exclude"
+    },
+    "model_som_information": {
+        "network_size": [
+            30,
+            30
+        ],
+        "num_iterations": 1000,
+        "learning_rate": 0.5,
+        "sigma": 10.5,
+        "neighborhood_function": "gaussian",
+        "topology": "rectangular",
+        "activation_distance": "euclidean",
+        "initial_weights": "pca",
+        "training": "random",
+        "seed": 1
+    },
+    "model_som_action": {
+        "dimension_reduction": {
+            "implement": "yes",
+            "normalize": "no"
+        },
+        "feature_selection": {
+            "implement": "no"
+        },
+        "classification": {
+            "implement": "no"
+        },
+        "clustering": {
+            "implement": "no",
+            "num_clusters": 3
+        }
+    }
 }
